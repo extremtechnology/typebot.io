@@ -1,4 +1,5 @@
-FROM node:18-slim AS base
+# Usar la imagen ARM64
+FROM arm64v8/node:18-slim AS base
 WORKDIR /app
 ARG SCOPE
 ENV SCOPE=${SCOPE}
